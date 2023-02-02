@@ -69,8 +69,5 @@
   },
   "ember": {
     "edition": "octane"
-  },
-  "dependencies": {
-    "@hashicorp/design-system-components": "^1.5.2"
   }
 }
