@@ -1,0 +1,20 @@
+<section
+  class="mx-auto bg-cover bg-center py-3 w-full bg-gray-100 overflow-hidden px-10 sm:px-6 lg:px-8 rounded-lg"
+  data-test-jumbo
+>
+  <div class="container mx-auto text-center sm:text-left">
+    <div class="flex items-center flex-col sm:flex-row">
+      <div class="w-3/4 sm:w-1/2" data-test-content>
+        {{yield}}
+      </div>
+      <div class="sm:w-1/2 sm:pl-16">
+        <img
+          src="/assets/images/teaching-tomster.png"
+          class="h-32 object-cover sm:h-64 sm:mx-auto"
+          alt="super rentals"
+          data-test-tomster
+        />
+      </div>
+    </div>
+  </div>
+</section>
