@@ -1,3 +1,20 @@
-<div data-test-img>
-  <img ...attributes />
-</div>
+<button data-test-img {{on "click" this.toggleModal}} type="button">
+  <img class="h-[250px] w-full object-cover sm:h-[300px]" ...attributes />
+</button>
+{{#if this.showModal}}
+  <div
+    id="modal"
+    class="fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center"
+    data-test-modal
+  >
+
+    <a
+      class="fixed z-90 top-6 right-8 text-white text-5xl font-bold"
+      href="#"
+      {{on "click" this.toggleModal}}
+      data-test-close-modal
+    >&times;</a>
+
+    <img class="max-w-[800px] max-h-[600px] object-cover" ...attributes />
+  </div>
+{{/if}}
