@@ -18,6 +18,10 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    rapidApi: {
+      RAPID_API_KEY: process.env.RAPID_API_KEY,
+      RAPID_API_HOST: process.env.RAPID_API_HOST,
+    },
   };
 
   if (environment === 'development') {
